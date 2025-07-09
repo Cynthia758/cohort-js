@@ -1,4 +1,4 @@
-let users = ["Vaidehi", "Twisha", "Prushti", "Ami"];
+let users = ["Vaidehi", "Twisha", "Prushti", "Ami", "Singh"];
 
 for (let i = 0 ; i<4 ; i++) {
     console.log(users[i]);
