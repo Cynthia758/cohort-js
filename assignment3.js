@@ -12,4 +12,4 @@ let user = {
     age : 90
 };
 
-greetuser(user);
+greetuser(user)
