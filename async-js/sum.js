@@ -1,5 +1,5 @@
 // TypeScript
-// Parse it to a number
+// Parse it to a number // Line by line compilation
 function sum(a,b) {
     return parseInt(a) + parseInt(b);
 }
