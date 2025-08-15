@@ -1,0 +1,26 @@
+I/O bound task :
+Tasks that are limited by how fast input/output operations happen — like reading files, making API calls, or querying a database.
+✅ Examples:
+Reading/writing to a file
+Calling an API or loading a webpage
+Accessing a database
+Uploading/downloading files
+📦 Node.js is great at I/O-bound tasks because it can handle them asynchronously without blocking.
+
+
+🧮 CPU-bound task
+Tasks that are limited by the processing power (CPU), usually involving intense calculations.
+🧠 CPU works hard, doesn’t rest.
+🕒 Waiting time is due to how long computations take.
+✅ Examples:
+Complex mathematical calculations
+Image or video processing
+Sorting large data sets
+Running heavy loops or algorithms (like encryption)
+📦 Node.js is not great at CPU-bound tasks by default, because one heavy task can block everything else — unless you use Worker Threads.
+
+💡 Analogy:
+I/O-bound is like waiting in line at a store — you’re not doing anything, just waiting.
+CPU-bound is like solving a big math puzzle — you’re actively thinking the whole time.
+
+

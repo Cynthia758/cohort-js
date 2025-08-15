@@ -7,3 +7,5 @@ console.log(data2);
 // if we don't write it , it will return a buffer and then we have to do smthing like const buffer = fs.readFileSystem('a.txt')
 // console.log(buffer.toString('utf-8));  Which is extra-work
 // UTF-8 : Understandable Text format
+// Provides us two functions: 1) ReadFile Function and 2) ReadFileSync Function just on their name the first one is async and the second one is sync.
+// But we're not going to use this fs.readFileSync option because it is working like runnig the code line by line which is more time-consuming, So instead of that we're gonna use the I/O bound task .
