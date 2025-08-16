@@ -5,13 +5,15 @@
     objects : The actual house built using the blueprint */
     /*class declarztion : Inside the class u declare properties and methods that will belong to the object created from this class*/
 
+
     class Rectangle {
-        constructor(width, height, color) {   // The constructor is a special method that is called when creating a new object from the class. It initializes the object’s properties.
+        constructor(width, height, color) {   // The constructor is a special method that is called when creating a new object from the class. It initializes the object’s properties. It's a method as well it used to initialize the properties of the object/
             this.width = width; // We are attaching the properties to the object.
             this.height = height;
             this.color = color;
         }
-        area() { // area is a method , print is a method
+        // Method : Functions that are defined inside the class and can be used by all instance of the class.
+        area() { // area is a method , print is a method as well.
             const area = this.width*this.height;
             return area;
         }
@@ -24,3 +26,5 @@
     const area = rect.area();
     console.log(area);
     rect.print(); // Prints with color blue
+
+    // Inheritance : Classes can inherit properties and methods from other classes, allowing you to create a new class based on an existing one.
