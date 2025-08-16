@@ -11,15 +11,16 @@
             this.height = height;
             this.color = color;
         }
-        area() {
+        area() { // area is a method , print is a method
             const area = this.width*this.height;
             return area;
         }
         print() {
             console.log(`Painting with color ${this.color}`); // backtick is allowing interpolation meaning we can directly insert the variables or expressions inside the string using ${...}.
+            // If not using backtick and we have to use only quotes then we are ought to use + sign  amd the syntax will be something like....console.log("Painting with color " + color);
         }
     }
-    const rect = new Rectangle(2,4,"blue"); // We are creating an object rect from the class Rectangle.
+    const rect = new Rectangle(2,4,"blue"); // We are creating an object rect from the class Rectangle, instance of the erctangle class.
     const area = rect.area();
     console.log(area);
     rect.print(); // Prints with color blue
