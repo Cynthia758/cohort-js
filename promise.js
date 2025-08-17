@@ -9,7 +9,7 @@
 /* Callback version : 
 setTimeout(callback,3000); */
 
-function setTimeoutPromisified(ms) {
+function setTimeoutPromisified(ms) {  // This line returns us the object of the promise class
     return new Promise((resolve)=> {
         setTimeout(resolve, ms);
     });
@@ -21,3 +21,6 @@ function long() {
 setTimeout(long,1000);
 setTimeoutPromisified(2000).then(long); // If we just write it as it is then it will give us an error so we have to define the promisified function somewhere line 12 to 16.
 // your intuition was right: they(call backs and promises) don’t run exactly at the same instant; Promise callbacks have priority over plain timeout callbacks.
+
+let p = setTimeoutPromisified(500);
+console.log(p);
