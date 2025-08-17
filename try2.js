@@ -2,6 +2,13 @@ function waitFor1s(resolve) { // Declares a function named waitFor1s; It takes o
     setTimeout(resolve, 1000) // It calls resolve after 1 seconds
 }
 
+function setTimeoutPromisified() {
+    return new Promise(waitFor1s);
+
+}
+
+setTimeoutPromisified().then(main);
+
 function main() { // Declares another function named as main ; It's not taking any argument.
     console.log("main is called.")
 }
